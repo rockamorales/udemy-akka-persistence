@@ -11,11 +11,18 @@ lazy val root = (project in file("."))
       "com.typesafe.akka" %% "akka-persistence" % akkaVersion,
       "com.lightbend.akka" %% "akka-persistence-jdbc" % "5.2.1",
       "com.typesafe.akka" %% "akka-persistence-query" % akkaVersion,
+      "com.typesafe.akka" %% "akka-coordination" % akkaVersion,
+      "com.typesafe.akka" %% "akka-remote" % akkaVersion,
+      "com.typesafe.akka" %% "akka-cluster" % akkaVersion,
+      "com.typesafe.akka" %% "akka-cluster-tools" % akkaVersion,
+      "com.typesafe.akka" %% "akka-pki" % akkaVersion,
       "com.typesafe.slick" %% "slick" % slickVersion,
       "com.typesafe.slick" %% "slick-hikaricp" % slickVersion,
       "org.postgresql" % "postgresql" % "42.6.0",
       "com.typesafe.akka" %% "akka-persistence-cassandra" % "1.1.1",
       "com.typesafe.akka" %% "akka-persistence-cassandra-launcher" % "1.1.1" % Test,
-      "com.google.protobuf" % "protobuf-java" % "3.23.2"
+      "com.google.protobuf" % "protobuf-java" % "3.23.2",
+      "org.iq80.leveldb" % "leveldb" % "0.12",
+      "org.fusesource.leveldbjni" % "leveldbjni-all" % "1.8"
     )
   )

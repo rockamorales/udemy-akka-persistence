@@ -23,6 +23,7 @@ lazy val root = (project in file("."))
 
       "com.typesafe.akka" %% "akka-persistence-cassandra" % "1.1.1",
       "com.typesafe.akka" %% "akka-persistence-cassandra-launcher" % "1.1.1" % Test,
+
       "com.google.protobuf" % "protobuf-java" % "3.23.2",
       "org.iq80.leveldb" % "leveldb" % "0.12",
       "org.fusesource.leveldbjni" % "leveldbjni-all" % "1.8"
